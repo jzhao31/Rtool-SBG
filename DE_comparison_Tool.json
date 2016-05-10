@@ -1,0 +1,228 @@
+{
+  "successCodes": [],
+  "sbg:createdBy": "jzhao_demo",
+  "description": "",
+  "sbg:id": "jzhao_demo/rna-de-star-htseq-deseq2/de-comparison/0",
+  "class": "CommandLineTool",
+  "hints": [
+    {
+      "class": "sbg:CPURequirement",
+      "value": 1
+    },
+    {
+      "class": "sbg:MemRequirement",
+      "value": 1000
+    },
+    {
+      "dockerImageId": "",
+      "class": "DockerRequirement",
+      "dockerPull": "jzhao31/de-comparison:v1"
+    }
+  ],
+  "baseCommand": [
+    "Rscript",
+    "/opt/DE_comparison.R"
+  ],
+  "sbg:modifiedOn": 1462214821,
+  "requirements": [
+    {
+      "id": "#cwl-js-engine",
+      "requirements": [
+        {
+          "class": "DockerRequirement",
+          "dockerPull": "rabix/js-engine"
+        }
+      ],
+      "class": "ExpressionEngineRequirement"
+    }
+  ],
+  "stdout": "",
+  "sbg:cmdPreview": "Rscript /opt/DE_comparison.R",
+  "sbg:image_url": null,
+  "sbg:revision": 0,
+  "inputs": [
+    {
+      "id": "#input_cuffdiff",
+      "type": [
+        "null",
+        "File"
+      ],
+      "label": "Cuffdiff gene result \"gene_exp.diff\"",
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 1
+      }
+    },
+    {
+      "id": "#input_DESeq2_HER2_TNBC",
+      "type": [
+        "null",
+        "File"
+      ],
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 2
+      }
+    },
+    {
+      "id": "#input_DESeq2_HER2_NonTNBC",
+      "type": [
+        "null",
+        "File"
+      ],
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 3
+      }
+    },
+    {
+      "id": "#log2foldchange_cutoff",
+      "type": [
+        "null",
+        "float"
+      ],
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 5,
+        "valueFrom": {
+          "class": "Expression",
+          "script": "if($job.inputs.log2foldchange_cutoff)\n  $job.inputs.log2foldchange_cutoff\nelse\n  -0.000001",
+          "engine": "#cwl-js-engine"
+        }
+      }
+    },
+    {
+      "id": "#p_value_cutoff",
+      "type": [
+        "null",
+        "float"
+      ],
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 6,
+        "valueFrom": {
+          "class": "Expression",
+          "script": "if($job.inputs.p_value_cutoff)\n  $job.inputs.p_value_cutoff\nelse\n  1.000001",
+          "engine": "#cwl-js-engine"
+        }
+      }
+    },
+    {
+      "id": "#input_DESeq2_TNBC_NonTNBC",
+      "type": [
+        "null",
+        "File"
+      ],
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 4
+      }
+    },
+    {
+      "id": "#adj_p_cutoff",
+      "type": [
+        "null",
+        "float"
+      ],
+      "inputBinding": {
+        "separate": false,
+        "sbg:cmdInclude": true,
+        "position": 7,
+        "valueFrom": {
+          "class": "Expression",
+          "script": "if($job.inputs.adj_p_cutoff)\n  $job.inputs.adj_p_cutoff\nelse\n  1.000001",
+          "engine": "#cwl-js-engine"
+        }
+      }
+    }
+  ],
+  "sbg:project": "jzhao_demo/rna-de-star-htseq-deseq2",
+  "temporaryFailCodes": [],
+  "label": "DE-comparison",
+  "sbg:latestRevision": 0,
+  "sbg:job": {
+    "allocatedResources": {
+      "mem": 1000,
+      "cpu": 1
+    },
+    "inputs": {
+      "input_DESeq2_TNBC_NonTNBC": {
+        "secondaryFiles": [],
+        "size": 0,
+        "class": "File",
+        "path": "/path/to/input_DESeq2_TNBC_NonTNBC.ext"
+      },
+      "log2foldchange_cutoff": null,
+      "input_DESeq2_HER2_TNBC": {
+        "secondaryFiles": [],
+        "size": 0,
+        "class": "File",
+        "path": "/path/to/input_DESeq2_HER2_TNBC.ext"
+      },
+      "p_value_cutoff": null,
+      "adj_p_cutoff": null,
+      "input_cuffdiff": {
+        "secondaryFiles": [],
+        "size": 0,
+        "class": "File",
+        "path": "/path/to/input_cuffdiff.ext"
+      },
+      "input_DESeq2_HER2_NonTNBC": {
+        "secondaryFiles": [],
+        "size": 0,
+        "class": "File",
+        "path": "/path/to/input_DESeq2_HER2_NonTNBC.ext"
+      }
+    }
+  },
+  "sbg:contributors": [
+    "jzhao_demo"
+  ],
+  "sbg:createdOn": 1462214821,
+  "sbg:validationErrors": [],
+  "sbg:modifiedBy": "jzhao_demo",
+  "stdin": "",
+  "sbg:revisionsInfo": [
+    {
+      "sbg:modifiedBy": "jzhao_demo",
+      "sbg:modifiedOn": 1462214821,
+      "sbg:revision": 0
+    }
+  ],
+  "id": "https://api.sbgenomics.com/v2/apps/jzhao_demo/rna-de-star-htseq-deseq2/de-comparison/0/raw/",
+  "arguments": [],
+  "outputs": [
+    {
+      "id": "#output_VennDiagram",
+      "type": [
+        "null",
+        "File"
+      ],
+      "outputBinding": {
+        "glob": "*.pdf"
+      }
+    },
+    {
+      "id": "#output_OverlapDEG",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "name": "output_OverlapDEG",
+          "items": "File"
+        }
+      ],
+      "outputBinding": {
+        "glob": "*.txt"
+      }
+    }
+  ],
+  "sbg:sbgMaintained": false,
+  "sbg:copyOf": "jzhao_demo/biological-differentialexpression/de-comparison/2"
+}
