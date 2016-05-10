@@ -3,16 +3,16 @@ This tool can be used in Seven Bridges Platform, in order to compare the differe
 
 
 
-### DE_comparison.R
+### --- DE_comparison.R ---
 R script performing pairwise comparisons for 3 groups of samples (HER2, TNBC, and NonTNBC).
 
-### Dockerfile
+### --- Dockerfile ---
 Dockerfile to build the docker image for this tool. The docker image can also be pulled from jzhao31/de-comparison:v1
 
-### DE_comparison_Tool.json
+### --- DE_comparison_Tool.json ---
 Json file for the tool. Users can import this Json file to Seven Bridges SDK to build the tool.
 
-### test files
+### --- test files---
 #### gene_exp.diff
 Differential gene expression result from STAR -- Cufflinks workflow
 
