@@ -1,8 +1,7 @@
 # Rtool-SBG
 This tool can be used in Seven Bridges Platform, in order to compare the differential expression results from STAR -- Cufflinks workflow and STAR - HTSeq-count - DESeq2 workflow. 
 
-#
-#
+
 ##### DE_comparison.R
 R script performing pairwise comparisons for 3 groups of samples (HER2, TNBC, and NonTNBC).
 
@@ -11,9 +10,9 @@ Dockerfile to build the docker image for this tool. The docker image can also be
 
 ##### DE_comparison_Tool.json
 Json file for the tool. Users can import this Json file to Seven Bridges SDK to build the tool.
-#
-#
-#
+
+
+
 ### test files
 ##### gene_exp.diff
 Differential gene expression result from STAR -- Cufflinks workflow
