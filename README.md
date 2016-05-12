@@ -1,7 +1,7 @@
 # Rtool-SBG
 This tool can be used in Seven Bridges Platform, in order to compare the differential expression results from STAR -- Cufflinks workflow and STAR - HTSeq-count - DESeq2 workflow. 
-<br />
-
+  
+  
 ##### DE_comparison.R
 R script performing pairwise comparisons for 3 groups of samples (HER2, TNBC, and NonTNBC).
 
