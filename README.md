@@ -14,14 +14,14 @@ Json file for the tool. Users can import this Json file to Seven Bridges SDK to 
 
 
 ### test files
-##### gene_exp.diff
-Differential gene expression result from STAR -- Cufflinks workflow
+##### CuffDiff_gene_exp_small.diff
+A test file of differential gene expression result from STAR -- Cufflinks workflow
 
-##### DESeq2_results_TNBC_Tumor_vs_HER2_Tumor.csv
-Differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples with HER2 tumor samples.
+##### DESeq2_TNBC_HER2_small.csv
+A test file of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples with HER2 tumor samples.
 
-##### DESeq2_results_TNBC_Tumor_vs_NonTNBC_Tumor.csv
-Differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples with NonTNBC tumor samples.
+##### DESeq2_TNBC_NonTNBC_small.csv
+A test file of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples with NonTNBC tumor samples.
 
-##### DESeq2_results_NonTNBC_Tumor_vs_HER2_Tumor.csv
-Differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares HER2 tumor samples with NonTNBC tumor samples.
+##### DESeq2_NonTNBC_HER2_small.csv
+A test of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares HER2 tumor samples with NonTNBC tumor samples.
