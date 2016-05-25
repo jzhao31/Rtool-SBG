@@ -13,7 +13,7 @@ Json file for the tool. Users can import this Json file to Seven Bridges SDK to 
 
 
 
-## test files
+## Test Files
 ##### CuffDiff_gene_exp_small.diff
 A test file of differential gene expression result from STAR -- Cufflinks workflow
 
@@ -29,7 +29,7 @@ A test of differential gene expression result from STAR - HTSeq-count - DESeq2 w
 
 
 ## CWL associated
-The CWL associated for the tool is called DE_comparison_Tool.cwl.json
+The CWL associated for the tool is called 'DE_comparison_Tool.cwl.json'
 
 you can run it locally with rabix (https://pypi.python.org/pypi/rabix/0.8.0)
 
