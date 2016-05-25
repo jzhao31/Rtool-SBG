@@ -1,5 +1,6 @@
 # Rtool-SBG
-This tool can be used in Seven Bridges Platform, in order to compare the differential expression results from STAR -- Cufflinks workflow and STAR - HTSeq-count - DESeq2 workflow. 
+This tool can be used in Seven Bridges Platform, in order to compare the differential expression results from STAR -- 
+Cufflinks workflow and STAR - HTSeq-count - DESeq2 workflow. 
   
   
 ##### DE_comparison.R
@@ -18,13 +19,16 @@ Json file for the tool. Users can import this Json file to Seven Bridges SDK to 
 A test file of differential gene expression result from STAR -- Cufflinks workflow
 
 ##### DESeq2_TNBC_HER2_small.csv
-A test file of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples with HER2 tumor samples.
+A test file of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples
+with HER2 tumor samples.
 
 ##### DESeq2_TNBC_NonTNBC_small.csv
-A test file of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples with NonTNBC tumor samples.
+A test file of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares TNBC tumor samples
+with NonTNBC tumor samples.
 
 ##### DESeq2_NonTNBC_HER2_small.csv
-A test of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares HER2 tumor samples with NonTNBC tumor samples.
+A test of differential gene expression result from STAR - HTSeq-count - DESeq2 workflow. It compares HER2 tumor samples with
+NonTNBC tumor samples.
 
 
 
