@@ -35,6 +35,6 @@ NonTNBC tumor samples.
 ## CWL associated
 The CWL associated for the tool is called 'DE_comparison_Tool.cwl.json'
 
-you can run it locally with rabix (https://pypi.python.org/pypi/rabix/0.8.0)
+you can run it locally with rabix (https://pypi.python.org/pypi/rabix)
 
   	rabix --verbose DE_comparison_Tool.cwl.json -- --input_cuffdiff CuffDiff_gene_exp_small.diff --input_DESeq2_HER2_TNBC DESeq2_TNBC_HER2_small.csv --input_DESeq2_HER2_NonTNBC DESeq2_NonTNBC_HER2_small.csv --input_DESeq2_TNBC_NonTNBC DESeq2_TNBC_NonTNBC_small.csv --log2foldchange_cutoff 2 --p_value_cutoff 0.05 --adj_p_cutoff 0.05
